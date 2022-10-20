@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+      <section style="height: 100vh; background:linear-gradient(to right, #514A9D, #24C6DC);">
+        <nav class="navbar p-2 mb-2 bg-dark text-white bg-opacity-50">
+            <div class="container">
+              <a class="navbar-brand text-white">Image Editor</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <div style="position: relative; top: 35%; height: 30vh;" class="d-flex flex-column align-items-center">    
+            <h1>Welcome to IMAGE IMPROVER</h1>
+            <div style="display: flex; width: 29.2rem;" class="mt-4">
+                <form action="noise_remover" method="get">
+                    <input type="submit" value="Noise Reduction" class="btn btn-dark me-5">
+                </form>
+                <form action="mexican_hat" method="get">
+                    <input type="submit" value="Sharpening" class="btn btn-dark me-5">
+                </form>
+                <form action="sharpener" method="get">
+                    <input type="submit" value="Mexican Hat" class="btn btn-dark me-5">
+                </form>
+            </div>
+        </div>
+        </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

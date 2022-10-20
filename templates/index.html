@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Quality Improver</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+      <section style="height: 100vh; background:linear-gradient(to right, #514A9D, #24C6DC);">
+        <nav class="navbar p-2 mb-2 bg-dark text-white bg-opacity-50">
+            <div class="container">
+              <a class="navbar-brand text-white">ImageEditor</a>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+          <div class="container"  style="height: 70vh;">
+            <div style="position: relative; top: 50%;">
+                <h1 class="text-center">Welcome To IMAGE IMPROVER</h1>
+                <form action="result" method="POST" enctype="multipart/form-data"> {% csrf_token %}
+                    <div class="mb-3">
+                        <div class="input-group mb-3 w-50 p-3" style="position: relative; left: 24%;">
+                            <input type="file" class="form-control" id="inputGroupFile02" name="image" accept="image/jpeg, image/png, image/jpg">
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </section>
+        <!-- <label class="input-group-text" for="inputGroupFile02">Upload</label> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
